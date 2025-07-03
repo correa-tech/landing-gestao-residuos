@@ -13,7 +13,10 @@ form.addEventListener('input', function () {
       }
     } else if (input.value.trim() === '') {
       todosPreenchidos = false;
+      input.classList.remove('valido')
       break;
+    }else {
+      input.classList.add('valido')
     }
   }
 
@@ -23,6 +26,7 @@ form.addEventListener('input', function () {
     btn.removeAttribute('disabled');
     btn.classList.remove('botao-desabilitado');
     btn.classList.add('botao-habilitado');
+
   } else {
     btn.setAttribute('disabled', true);
     btn.classList.remove('botao-habilitado');
@@ -39,3 +43,13 @@ btn.addEventListener('click', function (event) {
   }
   
 });
+
+const icone = document.getElementById('icone-login');
+const divTeste = document.getElementById('divTest');
+icone.addEventListener('click', function(){
+  if(divTeste.classList.contains('divTESTE')){
+
+    divTeste.classList.remove('divTESTE');
+    divTeste.classList.add('teste');
+  }
+})

@@ -6,6 +6,12 @@ body {
   z-index: 0;
 }
 
+.valido {
+    border: none;
+    border-bottom: 2px solid green;
+    transition: ease-in-out 1s;
+}
+
 
 body::before {
   content: "";
@@ -30,11 +36,12 @@ body::before {
     -moz-box-shadow: 0px -8px 8px -8px rgba(0, 0, 0, 0.09);
 }
 
+
 .login-container {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
 }
 
 .login-image {
@@ -43,7 +50,6 @@ body::before {
     align-items: center;
     justify-content: center;
 }
-
 
 
 .login-form {
@@ -63,6 +69,10 @@ body::before {
     backdrop-filter: blur(10px);
 }
 
+.divTESTE {
+    display: none;
+}
+
 .login-parceiro {
     display: flex;
     flex-direction: column;
@@ -70,41 +80,95 @@ body::before {
     width: 100%;
 }
 
+.teste {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    animation: teste 1.7s linear 2s 1 normal forwards;
+    position: absolute;
+    border-radius: 20px;
+    height: 60%;
+    width: 60%;
+}
+
+@keyframes teste {
+	0% {
+		transform: scaleY(0);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+
 #icone-login {
     width: 10vh;
     margin-bottom: 20px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 50%;
+    box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 3px 5px 0px rgba(0,0,0,0.32);
+    transition: ease-in-out 1s;
+    opacity: 90%;
+}
+
+#icone-login:hover {
+    width: 12vh;
+    cursor: pointer;
 }
 
 h2 {
     font-size: 50px;
     margin-top: 5px;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.6);
 }
 
 input {
     font-size: 20px;
     padding: 20px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     background: transparent;
+    transition: ease-in-out 1s;
 }
 
 input::placeholder {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
+    
+}
+
+#email {
+    background-image: url('/assets/icons/ic--outline-email.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: 2px center;
+    opacity: 80%;
+}
+
+#senha {
+    background-image: url('/assets/icons/ic--outline-lock.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: 2px center;
+    opacity: 80%;
 }
 
 input:placeholder-shown {
     font-size: 20px;
+    
 }
 
 input:focus::placeholder {
     font-size: 0px;
+    
 }
 
-.valido
-{
-  border:px solid green;
+input:focus {
+   outline: none;
 }
+
 
 .botao-habilitado {
     background-color: #94d454;
@@ -128,6 +192,7 @@ input:focus::placeholder {
     color: rgb(0, 0, 0);
     opacity: 0.6;
 }
+
 
 @media (max-width: 768px) {
     .login-container {
