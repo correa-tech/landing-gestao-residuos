@@ -46,7 +46,6 @@ body::before {
 
 
 
-
 .login-form {
     flex: 1;
     padding: 40px;
@@ -102,7 +101,12 @@ input:focus::placeholder {
     font-size: 0px;
 }
 
-#btn {
+.valido
+{
+  border:px solid green;
+}
+
+.botao-habilitado {
     background-color: #94d454;
     padding: 20px;
     font-size: 20px;
@@ -111,7 +115,18 @@ input:focus::placeholder {
     border-radius: 10px;
     cursor: pointer;
     color: rgb(0, 0, 0);
-    opacity: 100%;
+}
+
+.botao-desabilitado {
+    background-color: #94d454;
+    padding: 20px;
+    font-size: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    cursor: not-allowed;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
 }
 
 @media (max-width: 768px) {
