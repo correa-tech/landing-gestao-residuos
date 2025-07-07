@@ -8,10 +8,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dae1ab;
     color: #333;
+    padding-top: 100px;
 }
 
 #cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
+    z-index: 1000;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
