@@ -19,6 +19,8 @@ body {
     background-color: #71A53C;
     color: #FFFFFF;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 
 #cabecalho figure {
@@ -59,10 +61,4 @@ body {
     border-radius: 5px;
     color: #FFFFFF;
     transition: background-color 0.3s ease;
-}
-
-#menu li:hover {
-  background-color: #ffffff;
-  color: #71A53C;
-  border: 1px solid #71A53C;
 }
