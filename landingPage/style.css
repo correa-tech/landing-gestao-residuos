@@ -61,14 +61,16 @@ body {
     flex-wrap: wrap;
 }
 
-#menu li {
-    cursor: pointer;
-    font-size: 8px 12px;
-    border-radius: 5px;
+#menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
     color: #FFFFFF;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#menu li a:hover,
 .hover-menu {
     background-color: #ffffff;
     color: #71A53C;
