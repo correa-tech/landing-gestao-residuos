@@ -1,5 +1,5 @@
 const cabecalho = document.getElementById('cabecalho');
-const itensMenu = document.querySelectorAll('#menu li');
+const itensMenu = document.querySelectorAll('#menu li a');
 
 window.addEventListener("load", () => {
 
@@ -7,15 +7,13 @@ window.addEventListener("load", () => {
     
 })
 
-itensMenu.forEach((item) => {
+itensMenu.forEach((link) => {
 
-    item.addEventListener("mouseover", () => {
-        item.style.backgroundColor = "#ffffff";
-        item.style.color = "#71A53C";
+    link.addEventListener("mouseover", () => {
+        link.classList.add("hover-menu");   
     });
 
-    item.addEventListener("mouseout",() => {
-        item.style.backgroundColor = "transparent";
-        item.style.color = "#ffffff";
+    link.addEventListener("mouseout",() => {
+        link.classList.remove("hover-menu");
     });
 })
