@@ -8,7 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dae1ab;
     color: #333;
-    padding-top: 100px;
+    padding-top: 120px;
+    line-height: 1.6;
 }
 
 #cabecalho {
@@ -44,7 +45,7 @@ body {
 
 #cabecalho h1 {
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: 20px;
     text-align: center;
     color: #FFFFFF;
@@ -60,11 +61,49 @@ body {
     flex-wrap: wrap;
 }
 
-#menu li {
-    cursor: pointer;
+#menu li a {
+    text-decoration: none;
     font-size: 1rem;
-    padding: 10px 5px;
-    border-radius: 5px;
+    padding: 8px 12px;
     color: #FFFFFF;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#menu li a:hover,
+.hover-menu {
+    background-color: #ffffff;
+    color: #71A53C;
+}
+
+#inicio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#inicio h1 {
+    font-size: 2rem;
+    color: #355E2F;
+    margin-bottom: 10px;
+}
+
+#inicio h2 {
+    font-size: 1.4rem;
+    color: #4D7436;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+}
+
+#inicio figure img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
