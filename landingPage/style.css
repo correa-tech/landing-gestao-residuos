@@ -106,4 +106,9 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+#objetivo ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
 
