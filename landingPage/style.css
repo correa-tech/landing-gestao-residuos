@@ -135,3 +135,43 @@ body {
 #objetivo li {
     margin-bottom: 10px;
 }
+
+#impacto {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#impacto h2 {
+    font-size: 1.4rem;
+    color: #4D7436;
+    margin-bottom: 20px;
+}
+
+#impacto h3 {
+    font-size: 1.3rem;
+    color: #355E2F;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#impacto p {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    text-align: left;
+}
+
+#impacto ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#impacto li {
+    margin-bottom: 10px;
+}
