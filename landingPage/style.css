@@ -12,6 +12,11 @@ body {
     line-height: 1.6;
 }
 
+section {
+    scroll-margin-top: 140px;
+}
+
+
 #cabecalho {
     position: fixed;
     top: 0;
@@ -191,4 +196,71 @@ body {
     max-width: 700px;
     margin: 0 auto 15px auto;
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 160px;
+    }
+
+    #cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #cabecalho h1 {
+        font-size: 1.2rem;
+        margin: 10px 0 0 0;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    #menu li a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #logotipo {
+        width: 80px;
+        padding: 6px;
+    }
+
+    #inicio h1 {
+        font-size: 1.5rem;
+    }
+
+    #inicio h2,
+    #objetivo h2,
+    #impacto h2,
+    #acoes h2 {
+        font-size: 1.2rem;
+    }
+
+    #impacto h3 {
+        font-size: 1.1rem;
+    }
+
+    #inicio p,
+    #objetivo p,
+    #impacto p,
+    #acoes p {
+        padding: 0 10px;
+        font-size: 0.95rem;
+    }
+
+    #objetivo ul,
+    #impacto ul {
+        padding-left: 20px;
+    }
+
+    #inicio figure img {
+        max-width: 100%;
+    }
 }
