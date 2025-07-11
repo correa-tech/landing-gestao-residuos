@@ -175,3 +175,20 @@ body {
 #impacto li {
     margin-bottom: 10px;
 }
+
+#acoes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#acoes h2 {
+    font-size: 1.4rem;
+    color: #4D7436;
+    margin-bottom: 20px;
+}
+
+#acoes p {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    text-align: left;
+}
