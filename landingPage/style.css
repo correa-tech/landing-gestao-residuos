@@ -206,6 +206,31 @@ section {
     cursor: pointer;
 }
 
+#rodape {
+    background-color: #355E2F;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#rodape #creditos a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#rodape #logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+#rodape #logos img {
+    height: 50px;
+    object-fit: contain;
+}
+
 @media (max-width: 768px) {
     body {
         padding-top: 160px;
@@ -289,4 +314,30 @@ section {
     #inicio figure img {
         max-width: 100%;
     }
+
+    #rodape {
+    background-color: #355E2F;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#rodape #creditos a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#rodape #logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+#rodape #logos img {
+    height: 40px;
+    object-fit: contain;
+}
+
 }
