@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="./script.js" defer></script>
     <title>GRCJ</title>
 </head>
+
 <body>
     <header id="cabecalho">
         <figure>
@@ -15,7 +17,7 @@
         </figure>
         <h1>GRCJ - Gestão de Resíduos e Consumo de Joinville</h1>
         <button id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-        ☰
+            ☰
         </button>
         <nav>
             <ul id="menu">
@@ -57,9 +59,14 @@
             <section id="impacto">
                 <h2>Impacto</h2>
                 <h3>Você sabia que o que joga no lixo pode voltar para sua casa transformado?</h3>
-                <p>O <strong>ciclo da reciclagem</strong> é simples, mas poderoso: separar, encaminhar, reutilizar. Aquela garrafinha plástica esquecida pode virar tecido. A latinha do refrigerante, uma nova bicicleta. Só depende de como você age.</p>
+                <p>O <strong>ciclo da reciclagem</strong> é simples, mas poderoso: separar, encaminhar, reutilizar.
+                    Aquela garrafinha plástica esquecida pode virar tecido. A latinha do refrigerante, uma nova
+                    bicicleta. Só depende de como você age.</p>
                 <h3> Sua atitude importa. Mais do que você imagina.</h3>
-                <p>Separar os resíduos corretamente, evitar descartáveis, consumir de forma consciente... tudo isso <strong>parece pequeno, mas é gigantesco</strong> quando feito em comunidade. Com milhares de joinvilenses engajados, somos capazes de revolucionar a forma como vivemos.</p>
+                <p>Separar os resíduos corretamente, evitar descartáveis, consumir de forma consciente... tudo isso
+                    <strong>parece pequeno, mas é gigantesco</strong> quando feito em comunidade. Com milhares de
+                    joinvilenses engajados, somos capazes de revolucionar a forma como vivemos.
+                </p>
                 <h3>E quando a gente ignora o problema?</h3>
                 <p>A má gestão de resíduos traz <strong>consequências reais:</strong></p>
                 <ul>
@@ -73,13 +80,79 @@
                 <h2>Ações</h2>
                 <p>Você também pode <strong>fazer parte da mudança!</strong> Confira como participar</p>
                 <p>✅<strong> Doe seus recicláveis para cooperativas locais</strong></p>
-                <p>Materiais como papel, plástico, vidro e metal têm valor. Separe, limpe e entregue nas cooperativas que atuam em Joinville. Você contribui com o meio ambiente e com a renda de muitas famílias.</p>
+                <p>Materiais como papel, plástico, vidro e metal têm valor. Separe, limpe e entregue nas cooperativas
+                    que atuam em Joinville. Você contribui com o meio ambiente e com a renda de muitas famílias.</p>
                 <p>✅<strong>Participe de campanhas e eventos</strong></p>
-                <p>Fique atento às campanhas educativas, mutirões de limpeza, oficinas de reciclagem e ações promovidas pela prefeitura e parceiros. Sua participação fortalece o movimento por uma cidade mais consciente.</p>
+                <p>Fique atento às campanhas educativas, mutirões de limpeza, oficinas de reciclagem e ações promovidas
+                    pela prefeitura e parceiros. Sua participação fortalece o movimento por uma cidade mais consciente.
+                </p>
                 <p>✅<strong>Seja parceiro da sustentabilidade</strong></p>
-                <p>Você tem uma empresa, escola ou grupo comunitário? Junte-se ao GRCJ! Forme parcerias, promova boas práticas e ajude a ampliar o alcance do projeto.</p>
+                <p>Você tem uma empresa, escola ou grupo comunitário? Junte-se ao GRCJ! Forme parcerias, promova boas
+                    práticas e ajude a ampliar o alcance do projeto.</p>
+
+                <section id="formulario">
+
+                    <form id="form-parceiro">
+
+                        <h1 id="titulo-form">Torne-se um parceiro</h1>
+
+                        <h3 class="campos-relacionados">Dados de Cadastro</h3>
+                        <label>Nome do parceiro
+                        </label>
+                        <input type="text" id="nomeParceiro" required>
+
+                        <label>Tipo do parceiro
+                        </label>
+                        <select id="tipoParceiro">
+                            <option value="ECO">Ecopontos</option>
+                            <option value="COO">Cooperativas</option>
+                            <option value="PEVs">Ponto de Entrega Voluntária</option>
+                        </select>
+
+                        <label>Responsável
+                        </label>
+                        <input type="text" id="responsavelParceiro" required>
+
+                        <label>Telefone
+                        </label>
+                        <input type="tel" id="telResponsavel" required>
+
+                        <label>Email
+                        </label>
+                        <input type="email" id="emailResponsavel" required>
+
+                        <h3 class="campos-relacionados">Endereço</h3>
+                        <label>Rua
+                        </label>
+                        <input type="text" id="rua" required>
+
+                        <label>Número
+                        </label>
+                        <input type="number" id="numero" required>
+
+                        <label>Bairro
+                        </label>
+                        <input type="text" id="bairro" required>
+
+
+                        <h3 class="campos-relacionados">Tipos de Resíduos</h3>
+                        <label><input type="checkbox" id="papel"> Papel</label><br>
+                        <label><input type="checkbox" id="plastico"> Plástico</label><br>
+                        <label><input type="checkbox" id="vidro"> Vidro</label><br>
+                        <label><input type="checkbox" id="metal"> Metal</label><br>
+                        <label><input type="checkbox" id="oleoCozinha"> Óleo de cozinha</label><br>
+                        <label><input type="checkbox" id="pilhaBateria"> Pilhas e baterias</label><br>
+                        <label><input type="checkbox" id="eletronico"> Eletrônicos</label><br>
+                        <label><input type="checkbox" id="roupa"> Roupas</label><br>
+                        <label><input type="checkbox" id="outros"> Outros</label><br>
+
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
             </section>
         </article>
     </main>
 </body>
+
 </html>
