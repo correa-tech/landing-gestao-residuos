@@ -40,7 +40,6 @@ document.getElementById("form-parceiro").addEventListener("submit", function (e)
     rua: document.getElementById("rua").value,
     numero: parseInt(document.getElementById("numero").value),
     bairro: document.getElementById("bairro").value,
-    papel: document.getElementById("papel").checked,
     plastico: document.getElementById("plastico").checked,
     vidro: document.getElementById("vidro").checked,
     metal: document.getElementById("metal").checked,
