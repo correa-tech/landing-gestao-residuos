@@ -44,7 +44,7 @@ btn.addEventListener('click', function (event) {
   event.preventDefault()
 
   if(!btn.disabled){
-    window.location.href = '/Área do Parceiro/parceiros.html';
+    window.location.href = '/Área do Parceiro/detalhes.html';
   }
   
 });
