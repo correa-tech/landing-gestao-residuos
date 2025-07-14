@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detalhes-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.avatar-detalhe {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-detalhe p {
+  margin: 8px 0;
+}
+
+.info-detalhe strong {
+  color: #333;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.voltar:hover {
+  text-decoration: underline;
+}

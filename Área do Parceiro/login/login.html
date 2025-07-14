@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <main class="login-container">
+        <img src="../login/paisagem-de-floresta-nublada.jpg" alt="fundo" id="fundo" class="imagem-fundo">
+        <div id="container-img" class="login">
+            <div id="aba-parceiros" class="teste">
+                <h1>Para os Parceiros</h1>
+                <p>Olá, parceiro!
+                    Obrigado por contribuir para um futuro mais sustentável. Faça login para cadastrar seus pontos de
+                    coleta e acompanhar o impacto gerado.
+                </p>
+                <ul class="checklist">
+                    <li><span class="check">✔</span> Visibilidade no mapa de pontos de coleta</li>
+                    <li><span class="check">✔</span> Apoio na conscientização ambiental</li>
+                    <li><span class="check">✔</span> Relatórios do impacto gerado</li>
+                </ul>
+                <button id="botao-parceiros">Fazer Login</button>
+            </div>
+        </div>
+        <div id="login-form" class="login-form">
+            <img src="../login/ic--baseline-person.svg" alt="icone de login" id="icone-login">
+            <h2>Bem vindo</h2>
+            <form id="formulario-login" class="login-parceiro">
+                <input id="email" type="email" placeholder="Email ID ">
+                <input id="senha" type="password" placeholder="Senha">
+                <button disabled class="botao-desabilitado" id="btn">Entrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
