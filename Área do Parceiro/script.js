@@ -41,7 +41,7 @@ function renderizarParceiros(lista) {
 
     card.addEventListener('click', () => {
       localStorage.setItem('parceiroSelecionadoId', parceiro.id);
-      window.location.href = '../Detalhes_Parceiros/index.html';
+      window.location.href = '../Área do Parceiro/parceiros.html';
     });
 
     listaDiv.appendChild(card);
